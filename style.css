@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container h2 {
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.container p {
+  color: gray;
+}
+
+.container .input-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.container .input-container .input-box {
+  height: 100px;
+  width: 80px;
+  font-size: 4rem;
+  text-align: center;
+  font-family: inherit;
+  border-radius: 3px;
+  margin: 1%;
+  border: 1px solid darkgray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container .input-container .input-box:valid {
+  border-color: dodgerblue;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  background-color: #1111;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .input-container {
+    flex-wrap: wrap;
+  }
+
+  .input-box {
+    height: 60px;
+    width: 50px;
+    font-size: 2rem;
+  }
+}
